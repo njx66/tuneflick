@@ -323,9 +323,7 @@ text p {
         width: 100px;
     }
 
-    @media screen and (max-width: 600px) {
-        width: 150px;
-    }
+
 }
 
 .searchBox:hover > .searchButton {
@@ -428,7 +426,7 @@ main .content {
 
 .post a {
     text-decoration: none;
-    
+    color: black;
 }
 
 .post-item {
