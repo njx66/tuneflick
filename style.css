@@ -426,6 +426,11 @@ main .content {
     background: rgba(0, 0, 0, 0.85);
 }
 
+.post a {
+    text-decoration: none;
+    
+}
+
 .post-item {
     max-width: 2500px;
     max-height: 2500px;
