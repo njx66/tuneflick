@@ -125,68 +125,6 @@ header.active {
 
 }
 
-.popup .mobilemenu {
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-    padding-top: 20px;
-    line-height: 35px;
-}
-
-.popup .mobilemenu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: 100;
-}
-
-.popup {
-    position: fixed;
-    height: 325px;
-    top: 50%;
-    left: 50%;
-    background: rgb(25, 25, 25);
-    width: 275px;
-    padding: 25px;
-    border-radius: 25px;
-    visibility: hidden;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-    margin: auto;
-}
-
-.popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.closebtn {
-    position: fixed;
-    top: 85%;
-    left: 50%;
-    padding: 0;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-    margin: auto;
-    cursor: pointer;
-}
-.closebtn div {
-    height: 5px;
-    width: 25px;
-    border-radius: 25px;
-}
-.closebtn1 {
-    transform: translate(0, 2px) rotate(45deg);
-    background-color: red;
-}
-.closebtn2 {
-    transform: translate(0, -2px) rotate(-45deg);
-    background-color: red;
-}
-
 .p-menu1 .menu1 a {
     color: #fff;
     text-decoration: none;
@@ -220,7 +158,7 @@ header.active {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     margin: 5px;
-    height: 5px;
+    height: 3.5px;
     width: 40px;
     border-radius: 25px;
   }
@@ -378,8 +316,16 @@ text p {
 }
 
 .searchBox:hover > .searchInput {
-    width: 150px;
+    width: 250px;
     padding: 0 5px;
+
+    @media screen and (max-width: 400px) {
+        width: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 150px;
+    }
 }
 
 .searchBox:hover > .searchButton {
@@ -388,16 +334,17 @@ text p {
 }
 
 .searchButton {
+    position: relative;
     color: white;
     float: right;
-    width: 30px;
+    width: 25px;
     height: 30px;
     border-radius: 50%;
     background: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .searchInput {
@@ -468,7 +415,7 @@ main .content {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 .content-title-bar {
@@ -748,7 +695,7 @@ main .content {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 
