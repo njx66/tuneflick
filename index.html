@@ -15,7 +15,6 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css" class="rel">
-  <script src="main.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -40,8 +39,43 @@
 </head>
 <body>
 
-    <header>
+  <div id="menubtn">
+        
+    <div class="menu-times" id="times">
+      <i class="fa fa-times"></i>
+    </div>
 
+  </div>
+     
+    <div class="mobilemenu" id="mm">
+      <div id="mask"></div>
+      
+        <div class="ms">
+          <div class="mobilesearch">
+            <input class="ms-input" type="text" placeholder="Search">
+            <button id="msearchbtn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+    
+      <div class="menu">
+    
+        <div class="menu-links">
+          <a class="link" href="index.html">Home</a>
+          <a class="link" href="#">Music</a>
+          <a class="link" href="#">Videos</a>
+          <a class="link" href="#">Contact Us</a>
+        </div>
+    
+      </div>
+    
+    </div>
+
+  <div id="content-wrapper">
+
+    <header id="header">
+  
       <div class="headerinner">
         <div class="logo">
           <p><a href="index.html">Tuneflick</a></p>
@@ -62,45 +96,35 @@
             </li>
           </ul>
         </nav>
-          
-      </div>
-
-      <section class="p-menu1">
-        <nav id="navbar" class="navigation" role="navigation">
-          <input id="toggle1" type="checkbox" />
-          <label class="hamburger1" for="toggle1">
-            <div class="top"></div>
-            <div class="meat"></div>
-            <div class="bottom"></div>
-          </label>
         
-          <nav class="menu1">
-            <a class="link1" href="#">Home</a>
-            <a class="link1" href="#">Music</a>
-            <a class="link1" href="#">Videos</a>
-            <a class="link1" href="#">Contact Us</a>
-          </nav>
-      </nav>
-      </section>
+        <div id="menubtn">
+  
+          <div class="menu-bars" id="bars">
+            <i class="fas fa-bars"></i>
+          </div>
+        
+        </div>
+  
+      </div>
   
     </header>
   
-    <text>
+    <div id="text">
       <p>All about real entertainment</p>
       <div class="border-top border-dark"></div>
-    </text>
-
-    <div class="mobilesearchbox">
-      <div class="searchBox">
-        <input class="searchInput" type="text" name="" placeholder="Search">
-        <button class="searchButton" type="submit">
+    </div>
+  
+    <div class="search">
+      <div class="searchbox">
+        <input class="searchinput" type="text" placeholder="Search">
+        <button class="searchbutton" type="submit">
           <i class="fas fa-search"></i>
         </button>
       </div>
     </div>
-
+  
     <main>
-
+  
       <div class="music-wrapper">
       
         <div class="music-content">
@@ -108,40 +132,31 @@
           <div class="music-post">
       
             <div class="music-post-item">
-
-              <a href="">
-                <div class="musicicon-container">
-                  <div class="musicicon"></div>
-                  <i class="fa-solid fa-headphones-simple"></i>
-                </div>
-              
+  
+              <a href="">            
               
                 <div>
                   <figure><img src="images/nahh.jpg" alt=""></figure>
                 </div>
-                </div>
-              
-              
+                            
                 <h3>Nate Arlo - nahh Ft. Natewave & Dea Troy mp3</h3>
               
               </a>
-
+  
+            </div>  
+  
             <div class="publisher-date">
               <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
               <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
             </div>
-
+  
           </div>
       
           <div class="music-post">
       
             <div class="music-post-item">
               <a href="#">
-                <div class="musicicon-container">
-                  <div class="musicicon"></div>
-                  <i class="fa-solid fa-headphones-simple"></i>
-                </div>
-              
+  
                 <div>
                   <figure>
                     <img src="images/TGTT.jpg" alt="">
@@ -164,11 +179,7 @@
       
             <div class="music-post-item">
               <a href="#">
-                <div class="musicicon-container">
-                  <div class="musicicon"></div>
-                  <i class="fa-solid fa-headphones-simple"></i>
-                </div>
-              
+  
                 <div>
                   <figure>
                     <img src="images/MW1.jpg" alt="">
@@ -179,7 +190,7 @@
                 <h3>Nate Arlo - making wishes mp3</h3>
               
               </a>
-
+  
             <div class="publisher-date">
               <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
               <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
@@ -191,11 +202,7 @@
       
             <div class="music-post-item">
               <a href="#">
-                <div class="musicicon-container">
-                  <div class="musicicon"></div>
-                  <i class="fa-solid fa-headphones-simple"></i>
-                </div>
-              
+  
                 <div>
                   <figure>
                     <img src="images/bloody paper.jpg" alt="">
@@ -207,7 +214,7 @@
                 <h3>Osiris - bloody paper Ft. Nate Arlo mp3</h3>
               
               </a>
-
+  
             <div class="publisher-date">
               <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
               <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
@@ -216,13 +223,13 @@
           </div>
       
         </div>
-
+  
         <div class="viewall"><a href="#"><div id="loadmore"> View All </div></a></div>
-
+  
       </div>
-
-
-
+  
+  
+  
       <div class="flex">
       
         <div class="container">
@@ -239,13 +246,9 @@
             <div class="video-post">
       
               <div class="video-item">
-
+  
                 <a href="#">
-                  <div class="playicon-container">
-                    <div class="playicon"></div>
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-      
+  
                   <div>
                     <figure><img src="images/nahh.jpg" alt=""></figure>
                   </div>
@@ -262,11 +265,7 @@
       
               <div class="video-item">
                 <a href="#">
-                  <div class="playicon-container">
-                    <div class="playicon"></div>
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-      
+  
                   <div>
                     <figure>
                       <img src="images/TGTT.jpg" alt="">
@@ -284,11 +283,7 @@
       
               <div class="video-item">
                 <a href="#">
-                  <div class="playicon-container">
-                    <div class="playicon"></div>
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-      
+  
                   <div>
                     <figure>
                       <img src="images/MW1.jpg" alt="">
@@ -299,18 +294,14 @@
               <h3>Nate Arlo - making wishes official music video</h3>
       
               </a>
-
+  
             </div>
       
             <div class="video-post">
       
               <div class="video-item">
                 <a href="#">
-                  <div class="playicon-container">
-                    <div class="playicon"></div>
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-      
+  
                   <div>
                     <figure>
                       <img src="images/bloody paper.jpg" alt="">
@@ -322,13 +313,13 @@
               <h3>Osiris - bloody paper Ft. Nate Arlo</h3>
       
               </a>
-
+  
             </div>
       
           </div>
       
         </div>
-
+  
     
         <div class="sidebar">
     
@@ -339,7 +330,7 @@
             </div>
     
             <div class="sidebar-content">
-
+  
               <a href="#">
                 <img src="images/nahh.jpg" alt="">
               
@@ -381,7 +372,7 @@
             </div>
     
           </div>
-
+  
           <div class="social-section">
             <div class="sidebar-socials">
               <p>Follow us</p>
@@ -392,12 +383,12 @@
           </div>
     
         </div>
-
+  
       </div>
     
     </main>
-
-
+  
+  
     <div class="promo">
     
       <div class="promo-heading">
@@ -412,31 +403,31 @@
     
     </div>
   
-    <section>
-  
-    </section>
-  
     <footer>
-
+  
         <div class="sociallinks">
           <a href=""><i class="fa-brands fa-facebook"></i>&nbsp;</a>
           <a href=""><i class="fa-brands fa-instagram"></i>&nbsp;</a>
           <a href=""><i class="fa-brands fa-x-twitter"></i></a>
         </div>
-
+  
       <div class="footercontainer">
         <div class="footerlogo">
           <p><a href="#">Tuneflick</a></p>
         </div>
-
+  
         <div class="footernav">
           <a href="">Contact us</a>
           <a href="">Privacy policy</a>
           <a href="">Disclaimer</a>
         </div>
       </div>
-
+  
     </footer>
 
+  </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
