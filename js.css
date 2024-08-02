@@ -1,14 +1,3 @@
-body.fixed {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
 openbtn.hide {
     display: none;
-}
-
-#mask.block {
-    display: block;
 }
