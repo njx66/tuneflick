@@ -24,12 +24,11 @@ openbtn.addEventListener('click', mobilemenu);
 closebtn.addEventListener('click', close);
 mask.addEventListener('click', close);
 
-
 function mobilemenu() {
     animate.style.right = "0%",
-    openbtn.style.display = "none",
+    openbtn.classList.add('hide'),
     closebtn.style.right = "15px",
-    mask.style.display = "block",
+    mask.classList.add('block'),
     filter.style.filter = "blur(1px)",
     filter.style.overflow = "hidden",
     body.classList.add('fixed')
@@ -38,8 +37,8 @@ function mobilemenu() {
 function close() {
     animate.style.right = "-100%",
     closebtn.style.right = "-100%";
-    openbtn.style.display = "block";
-    mask.style.display = "none",
+    openbtn.classList.remove('hide'),
+    mask.classList.remove('block'),
     filter.style.filter = "none",
     filter.style.overflow = "hidden",
     body.classList.remove('fixed')

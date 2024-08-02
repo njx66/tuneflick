@@ -15,6 +15,7 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css" class="rel">
+  <link rel="stylesheet" href="js.css" class="rel">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -50,14 +51,16 @@
     <div class="mobilemenu" id="mm">
       <div id="mask"></div>
       
-        <div class="ms">
+        <!-- <div class="ms">
           <div class="mobilesearch">
-            <input class="ms-input" type="text" placeholder="Search">
-            <button id="msearchbtn" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
+            <input class="s-input" id="ms-input" type="text" placeholder="Search...">
+            <a href="search.html">
+              <button  class="s-btn" id="msearchbtn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </a>
           </div>
-        </div>
+        </div> -->
     
       <div class="menu">
     
@@ -67,7 +70,7 @@
           <a class="link" href="#">Videos</a>
           <a class="link" href="#">Contact Us</a>
         </div>
-    
+
       </div>
     
     </div>
@@ -109,126 +112,174 @@
   
     </header>
   
-    <div id="text">
-      <p>All about real entertainment</p>
+    <!-- <div id="text">
+      <p></p>
       <div class="border-top border-dark"></div>
-    </div>
+    </div> -->
   
-    <div class="search">
+    <div class="search-wrapper">
       <div class="searchbox">
-        <input class="searchinput" type="text" placeholder="Search">
-        <button class="searchbutton" type="submit">
-          <i class="fas fa-search"></i>
-        </button>
+        <input class="s-input" id="searchinput" type="text" placeholder="Search...">
+        <a href="search.html">
+          <button class="s-btn" id="searchbutton" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </a>
       </div>
     </div>
   
     <main>
-  
-      <div class="music-wrapper">
-      
-        <div class="music-content">
-      
+
+      <div class="music-container">
+        <div class="music-wrapper">
           <div class="music-post">
-      
-            <div class="music-post-item">
-  
-              <a href="">            
-              
-                <div>
-                  <figure><img src="images/nahh.jpg" alt=""></figure>
-                </div>
-                            
-                <h3>Nate Arlo - nahh Ft. Natewave & Dea Troy mp3</h3>
-              
-              </a>
-  
-            </div>  
-  
-            <div class="publisher-date">
-              <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
-              <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
+            <div id="tag">Music</div>
+
+            <img src="images/nahh.jpg" alt="">
+
+            <div class="post-item">
+              <h2>Nate Arlo - Nahh mp3</h2>
+
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
             </div>
-  
+
           </div>
-      
-          <div class="music-post">
-      
-            <div class="music-post-item">
-              <a href="#">
-  
-                <div>
-                  <figure>
-                    <img src="images/TGTT.jpg" alt="">
-                  </figure>
-                </div>
-                </div>
-              
-                <h3>Nate Arlo - time got tales too mp3</h3>
-              
-              </a>
-      
-            <div class="publisher-date">
-              <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
-              <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
-            </div>
-      
-          </div>
-      
-          <div class="music-post">
-      
-            <div class="music-post-item">
-              <a href="#">
-  
-                <div>
-                  <figure>
-                    <img src="images/MW1.jpg" alt="">
-                  </figure>
-                </div>
-                </div>
-              
-                <h3>Nate Arlo - making wishes mp3</h3>
-              
-              </a>
-  
-            <div class="publisher-date">
-              <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
-              <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
-            </div>
-      
-          </div>
-      
-          <div class="music-post">
-      
-            <div class="music-post-item">
-              <a href="#">
-  
-                <div>
-                  <figure>
-                    <img src="images/bloody paper.jpg" alt="">
-                  </figure>
-                </div>
-                </div>
-              
-              
-                <h3>Osiris - bloody paper Ft. Nate Arlo mp3</h3>
-              
-              </a>
-  
-            <div class="publisher-date">
-              <p><i class="fa-solid fa-user"></i> <text>Tuneflick</text></p>
-              <p><i class="fa-regular fa-calendar-xmark"></i> <text>May 23, 2024</text></p>
-            </div>
-      
-          </div>
-      
         </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">EP</div>
+            
+            <img src="images/TGTT.jpg" alt="">
   
-        <div class="viewall"><a href="#"><div id="loadmore"> View All </div></a></div>
+            <div class="post-item">
+              <h2>Nate Arlo - Time got tales too</h2>
+              
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">Music</div>
   
+            <img src="images/MW1.jpg" alt="">
+  
+            <div class="post-item">
+              <h2>Nate Arlo - Making wishes mp3</h2>
+
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">Music</div>
+  
+            <img src="images/bloody paper.jpg" alt="">
+  
+            <div class="post-item">
+              <h2>Osiris - Bloody paper Ft. Nate Arlo mp3</h2>
+
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">Music</div>
+
+            <img src="images/nahh.jpg" alt="">
+
+            <div class="post-item">
+              <h2>Nate Arlo - Nahh mp3</h2>
+
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">EP</div>
+            
+            <img src="images/TGTT.jpg" alt="">
+  
+            <div class="post-item">
+              <h2>Nate Arlo - Time got tales too</h2>
+              
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">Music</div>
+  
+            <img src="images/MW1.jpg" alt="">
+  
+            <div class="post-item">
+              <h2>Nate Arlo - Making wishes mp3</h2>
+
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="music-wrapper">
+          <div class="music-post">
+            <div id="tag">Music</div>
+  
+            <img src="images/bloody paper.jpg" alt="">
+  
+            <div class="post-item">
+              <h2>Osiris - Bloody paper Ft. Nate Arlo mp3</h2>
+
+              <div id="date-posted">
+                <i class="fa-regular fa-clock icon"></i>
+                <p>May 23, 2024</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
       </div>
-  
-  
+      
+      <div class="load-more">
+        <button id="loadmore">Load more</button>
+      </div>
+      
   
       <div class="flex">
       

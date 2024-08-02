@@ -1,5 +1,5 @@
 html, body {
-    background-color: white;
+    background-color: #fff;
     margin: 0 auto;
     padding: 0;
     color: #000;
@@ -8,13 +8,6 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
     position: relative;
-}
-
-body.fixed {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
 }
     
 #content-wrapper {
@@ -99,11 +92,12 @@ header {
 
 .navlink button {
     text-align: center;
-    background: blue;    
-    padding: 8px 10px;
-    margin: 2.5px;
+    background: #222;    
+    padding: 8px;
+    margin: 3px;
     font-size: 0.5em;
     font-weight: 750;
+    letter-spacing: 1.5px;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -170,10 +164,10 @@ header {
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        background-color: blue;
+        background-color: #222;
         opacity: 0.975;
         top: 0;
-        width: 75%;
+        width: 80%;
         height: 100vh;
         transition: .25s ease-in-out;
         z-index: 85;
@@ -186,7 +180,7 @@ header {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 25%;
+    width: 20%;
     height: 100vh;
     background: none;
     backdrop-filter: blur(5px);
@@ -203,7 +197,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
     margin: 100px 25px;
 }
 
@@ -225,61 +219,6 @@ header {
 .menu-links a {
     font-size: 0.75em;
     letter-spacing: 5px;
-}
-
-.ms {
-    position: relative;
-}
-
-.mobilesearch:hover > .ms-input {
-    width: 150px;
-    padding: 0 7.5px;
-}
-
-.mobilesearch {
-    position: absolute;
-    background: transparent;
-    top: 25px;
-    left: 15px;
-    background-color: none;
-    border-radius: 25%;
-}
-
-.ms-input {
-    width: 0;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    font-size: 0.75em;
-    color: #000;
-    float: left;
-    padding: 0;
-    margin: 0;
-    transition: 0.5s;
-    line-height: 27.5px;
-}
-
-.mobilesearch:hover > #msearchbtn {
-    background: #000;
-    padding: 15px;
-    outline: none;
-}
-
-#msearchbtn {
-    position: relative;
-    color: #fff;
-    float: right;
-    width: 25px;
-    height: 27.5px;
-    background: transparent;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.25s;
-    outline: none;
-    font-size: 1em;
-
 }
 
 #text {
@@ -345,158 +284,173 @@ header {
     font-size: 0.75em;
 }
 
-.search {
+.search-wrapper {
     position: relative;
+    display: block;
+    margin: 35px auto;
+    padding: 0;
+    text-align: center;
 
     @media screen and (max-width: 768px) {
-        display: none;
+        margin-top: 100px;
     }
 }
 
 .searchbox {
-    position: absolute;
-    left: 50%;
-    transform:  translate(-50%, 50%);
+    position: relative;
+    display: inline-block;
     background: white;
-    height: 50px;
     border: #000 2px solid;
-    border-radius: 25px;
     padding: 10px;
+    border-radius: 5px;
+    height: 35px;
 }
 
-.searchbox:hover > .searchinput {
-    width: 250px;
-    padding: 0 5px;
+#searchinput {
+    position: relative;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    margin-top: -5px;
+    color: #000;
+    font-size: 0.75em;
+    transition: 0.4s;
+    width: 200px;
+    
+    &:focus {
+        transform: scale(1.025);
+        transition: 0.25s;
+    } 
 }
 
-.searchbox:hover > .searchbutton {
-  background: #fff;
-  color: #000;
-  outline: none;
-}
-
-.searchbutton {
+#searchbutton {
     position: relative;
     color: #fff;
+    font-size: 0.75em;
     float: right;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #000;
+    width: 1px; 
+    height: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.2s;
     outline: none;
-}
-
-.searchinput {
+    padding: 12.5px;
+    background: #000;
+    top: -7.5px;
+    right: -5px;
     border: none;
-    background: none;
     outline: none;
-    float: left;
-    padding: 0;
-    color: #000;
-    font-size: 0.75em;
-    transition: 0.4s;
-    line-height: 25px;
-    width: 0;
 }
 
 main {
     background-color: #fff;
-    margin-bottom: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.post {
-    display: block;
-    background: #fff;
-    padding: 10px;
-    margin-top: 0;
-}
-
-main .container {
-    width: 100%;
-    margin: 0 auto !important;
-    padding: 0 !important;
-}
-
-main .music-content {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    padding-top: 85px;
-
-    @media screen and (max-width: 980px) {
-        grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    padding: 0;
+    max-width: 1135px;
+    
+    @media screen and (max-width: 1024px) {
+        max-width: 955px;
+        margin: 25px auto;
     }
+}
+
+/* main {} */
+
+main .music-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+    position: relative;
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        margin: 20px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 375px) {
         display: block;
-        margin: -10px;
     }
 }
 
-.music-wrapper {
-    margin: 15px !important;
-    padding: 15px !important;
-}
+.music-wrapper {}
 
 .music-post {
+    position: relative;
+    border-radius: 10px;
+    background-size: cover;
+    display: block;
     width: 100%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 2px #ddd;
+    overflow: hidden;
 
-    @media screen and (max-width: 600px) {
-        margin-bottom: 25px;
+    @media screen and (max-width: 768px) {
+        display: block;
     }
-
-    &:hover {
-        transform: scale(1.025);
-        transition: .5s;
+    
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
     }
 }
 
-.music-post a {
-    text-decoration: none;
+.music-post #tag {
+    position: absolute;
+    display: inline-block;
+    background-color: #ff0525;
+    color: #fff;
+    font-size: 0.75em;
+    padding: 6px 10px;
+    top: 0;
+    left: 0;
+    width: fit-content;
+}
+
+.music-post img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+    }
+}
+
+.post-item {
+    position: relative;
+    height: 90px;
+    padding: 12.5px;
+    cursor: pointer;
+}
+
+.post-item h2 {
+    font-size: 0.925em;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+#date-posted {
+    position: relative;
+    font-size: 0.65em;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #525252;
+}
+
+#date-posted p {
+    margin: 0;
+    padding: 0;
+}
+
+#date-posted .icon {
     color: #000;
-}
-
-.music-post-item {
-    max-width: 2500px;
-    max-height: 2500px;
-}
-
-.music-post-item figure {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    cursor: pointer;
-}
-
-.music-post-item img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.music-post h3 {
-    margin: 0 15px 0 15px;
-    font-size: 1em;
-    cursor: pointer;
 }
 
 .content-title-bar p {
@@ -597,39 +551,18 @@ main .music-content {
     object-fit: cover;
 }
 
-.viewall {
+.load-more {
     display: block;
-    margin: 50px auto 25px;
-    padding: 10px 10px;
-    border: 1px black solid;
-    background-color: #fff;
-    cursor: pointer;
     text-align: center;
-    width: 75px;
+    margin: 35px auto;
 }
 
 #loadmore {
+    display: inline-block;
     font-size: 0.75em;
-}
-
-.viewall a {
-    text-decoration: none;
-    color: #000;
-}
-
-.publisher-date {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 15px;
-}
-.publisher-date p {
-    font-size: 0.5em;
-    font-weight: 400;
-}
-.publisher-date p text {
-    font-size: 10px;
-    margin-top: 1.5px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: #000 2px solid;
 }
 
 .sidebar {
