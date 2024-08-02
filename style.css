@@ -316,12 +316,12 @@ header {
     color: #000;
     font-size: 0.75em;
     transition: 0.4s;
-    width: 200px;
+    width: 235px;
     
     &:focus {
         transform: scale(1.025);
         transition: 0.25s;
-    } 
+    }
 }
 
 #searchbutton {
