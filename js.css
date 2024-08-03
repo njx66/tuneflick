@@ -1,3 +1,8 @@
+html.active {
+    overflow: hidden;
+    width: 100%;
+}
+
 openbtn.hide {
     display: none;
 }

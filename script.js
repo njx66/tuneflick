@@ -15,19 +15,22 @@ window.addEventListener("scroll", function() {
 
 const openbtn = document.querySelector('#bars');
 const closebtn = document.querySelector('#times');
-const animate = document.querySelector('#mm');
+const menu = document.querySelector('#mm');
+const noscroll = document.querySelector('html');
 
 openbtn.addEventListener('click', mobilemenu);
 closebtn.addEventListener('click', close);
 
 function mobilemenu() {
-    animate.style.right = "0%",
-    openbtn.classList.add('hide'),
-    closebtn.style.right = "15px"
+    menu.style.right = "0%";
+    closebtn.style.right = "15px";
+    openbtn.classList.add('hide');
+    noscroll.classList.add('active');
 }
 
 function close() {
-    animate.style.right = "-100%",
+    menu.style.right = "-100%";
     closebtn.style.right = "-100%";
-    openbtn.classList.remove('hide')
+    openbtn.classList.remove('hide');
+    noscroll.classList.remove('active');
 }
