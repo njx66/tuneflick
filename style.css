@@ -1048,9 +1048,10 @@ footer .sociallinks {
     font-size: 0.75em;
     color: white;
     border-radius: 10px;
+    letter-spacing: 1px;
 
     &:hover {
-        color: blue;
+        color: #0085ff;
     }
 }
 
@@ -1068,7 +1069,7 @@ footer .sociallinks {
     text-align: left;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.979);
-    font-size: 1em;
-    font-family: 'dancing script', sans-serif;
-    font-weight: 1000;
+    font-size: 1.25em;
+    font-family: 'oswald', sans-serif;
+    font-weight: bold;
 }

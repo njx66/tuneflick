@@ -38,7 +38,7 @@ searchInput.forEach(function (sInput) {
 
     sInput.addEventListener("input", () => {
         const searchQuery = sInput.value;
-        searchButton.href = "/search.html?query=" + encodeURIComponent(searchQuery);
+        searchButton.href = "search.html?query=" + encodeURIComponent(searchQuery);
     });
 });
 
