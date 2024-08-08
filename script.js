@@ -29,6 +29,7 @@ const searchInput = get(".s-input");
 
 searchInput.forEach(function (sInput) {
     sInput.addEventListener("keypress", function (event) {
+
         if (event.key === "Enter") {
             event.preventDefault();
     
