@@ -11,5 +11,4 @@
             if (containsQuery) return;
             post.style.display = "none";
         });
-        console.log('i am running');
     }
