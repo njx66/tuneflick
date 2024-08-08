@@ -14,13 +14,13 @@
             searchText.innerHTML = '';
 
             if (containsQuery) {
-                post.style.display = "flex";
+                post.classList.add("true");
                 searchText.innerHTML = "search results for; " + query;
             } else if (!containsQuery) {
-                post.style.display = "none";
+                post.classList.remove("true");
                 searchText.innerHTML = "search results for; " + query;
             } else {
-                post.style.display = "none";
+                post.classList.remove("true");
             }
         });
     }

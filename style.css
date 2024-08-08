@@ -40,6 +40,10 @@ html, body {
 
 .search-posts-wrapper .posts {
     display: none;
+}
+
+.search-posts-wrapper .posts.true {
+    display: flex;
     align-items: center;
     margin: 25px 0;
     box-shadow: 0px 2px 4px 2px #ddd;
@@ -374,11 +378,18 @@ header {
     letter-spacing: 5px;
 }
 
+.m-wrapper {
+    position: relative;
+    display: block;
+    height: 100vh;
+}
+
 .socials {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 25px;
     width: 100%;
 }
 
@@ -579,6 +590,7 @@ main #latest-container {
     @media screen and (max-width: 375px) {
         display: block;
         padding: 15px 0;
+        margin: 0;
         width: 100%;
     }
 }
@@ -602,8 +614,9 @@ main #latest-container {
     margin: 0 0 50px 0;
 
     @media screen and (max-width: 375px) {
-        margin: 0 0 25px 0;
+        margin: 0;
         padding: 12.5px 0;
+        height: 100%;
     }
 }
 
