@@ -378,19 +378,12 @@ header {
     letter-spacing: 5px;
 }
 
-.m-wrapper {
-    position: relative;
-    display: block;
-    height: 100vh;
-}
-
 .socials {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    margin: 25px;
     bottom: 25px;
-    width: 100%;
 }
 
 .socials .icon {
