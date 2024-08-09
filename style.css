@@ -492,10 +492,6 @@ main {
     height: 450px;
     object-fit: cover;
     cursor: pointer;
-
-    @media screen and (max-width: 375px) {
-        height: 400px;
-    }
 }
 
 .f-post-item {
@@ -604,11 +600,13 @@ main #latest-container {
 
     @media screen and (max-width: 375px) {
         width: 100%;
+        height: 200px;
     }
 }
 
 .post-item {
     position: relative;
+    width: 80%;
     height: 90px;
     padding: 12.5px;
     margin: 0 0 50px 0;
